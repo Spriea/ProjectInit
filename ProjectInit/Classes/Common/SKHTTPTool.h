@@ -111,6 +111,4 @@ typedef NS_ENUM(NSUInteger, SKRequsetType) {
  */
 + (BOOL)isMobileNumber:(NSString *)mobileNum;
 
-+ (BOOL)checkCellPhoneNum:(NSString *)cellPhoneNum;
-
 @end

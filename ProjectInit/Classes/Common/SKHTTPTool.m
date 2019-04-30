@@ -101,7 +101,6 @@ static AFHTTPSessionManager *_manager = nil;
     }
     
     NSString *URLString = [Base_Url stringByAppendingString:url];
-//    URLString = @"http://test.dayday30.cn/yhw/rw/dictionary/api/web/index.php/v1/verify/studentlogin?timestamp=1540450915&randnum=12549&signal=28B0B2D0E83397E66D9AADC3830ABB9A14015978";
     SKLog(@"%@ %@", URLString, parmarMut);
     
     // 请求成功回调Block
@@ -117,7 +116,6 @@ static AFHTTPSessionManager *_manager = nil;
             [SVProgressHUD setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
             [SVProgressHUD setImageViewSize:CGSizeMake(28, 28)];
         }
-//        NSData *data = [responseObject dataUsingEncoding:NSUTF8StringEncoding];
         
         NSDictionary *dict = responseObject;
         NSString *reqFlag = [NSString stringWithFormat:@"%@", dict[@"code"]];
@@ -207,15 +205,6 @@ static AFHTTPSessionManager *_manager = nil;
             successBlock:(SuccessBlock)successBlock
               errorBlock:(ErrorCodeBlock)errorBlock
                      HUD:(BOOL)hud{
-    
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",
-//                                                         @"text/html",
-//                                                         @"image/jpeg",
-//                                                         @"image/png",
-//                                                         @"application/octet-stream",
-//                                                         @"text/json",
-//                                                         nil];
     if (hud) {
         [SVProgressHUD showLoadingImage:[UIImage imageWithGIFNamed:@"loading"]];
         [SVProgressHUD setBackgroundColor:[UIColor clearColor]];
@@ -394,17 +383,6 @@ static AFHTTPSessionManager *_manager = nil;
     {
         return NO;
     }
-}
-
-+ (BOOL)checkCellPhoneNum:(NSString *)cellPhoneNum{
-    if (cellPhoneNum.length != 0){
-        return YES;
-    }
-    NSString *patternCellphone =  @"^((13[0-9])|(14[0-9])|(15[0-9])|(16[0-9])|(17[0-9])|(18[0-9]))//d{8}$";
-    NSRegularExpression *regexCellphone = [NSRegularExpression regularExpressionWithPattern:patternCellphone options:0 error:nil];
-    
-    NSTextCheckingResult *isMatchCellphone = [regexCellphone firstMatchInString:cellPhoneNum options:0 range:NSMakeRange(0, [cellPhoneNum length])];
-    return isMatchCellphone != nil;
 }
 
 @end

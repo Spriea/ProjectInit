@@ -52,7 +52,7 @@
     versionL.numberOfLines = 0;
     [contView addSubview:versionL];
     self.versionL = versionL;
-    [versionL sk_TitleFont:kSemiboldFont(14) title:@"小爱英语\n版本更新\nV1.0" color:nil];
+    [versionL sk_TitleFont:kFontWithSize(14) title:@"xxAPP\n版本更新\nV1.0" color:nil];
     [versionL mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(contView).offset(kSCALE_X(138));
         make.top.equalTo(contView).offset(kSCALE_X(20));

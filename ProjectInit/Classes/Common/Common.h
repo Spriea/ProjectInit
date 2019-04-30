@@ -38,18 +38,9 @@
 #define kStatusH [[UIApplication sharedApplication] statusBarFrame].size.height
 #define kNavBarH self.navigationController.navigationBar.frame.size.height
 
-// 根据不同屏幕设置不同字体大小
+// 根据不同屏幕设置等比例缩放字体
 #define FONT_SIZE(size) kSCALE_X(size)
 #define kFontWithSize(size) [UIFont systemFontOfSize:kSCALE_X(size)]
-
-//#define FONT360_SIZE(size) kSCALE360_X(size)
-//#define kFontWithSize360(size) [UIFont systemFontOfSize:kSCALE360_X(size)]
-
-#define kSemiboldFont(x) [SKCustomFunction SemiboldFontWithSize:x]
-
-//static inline CGFloat _fontSize(CGFloat fontSize){
-//    return fontSize*0.5;
-//}
 
 /**不选中cell*/
 #define kDeSelectedCell [tableView deselectRowAtIndexPath:indexPath animated:NO];
@@ -57,9 +48,11 @@
 /**判断系统版本大于某个版本*/
 #define IOS_Later(version) [[UIDevice currentDevice].systemVersion doubleValue] >= (version) ? YES : NO
 
+/**判断是iPhone还是iPad（纯iPhone开发不用使用）*/
 #define kIS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define kIS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
 
+/**判断留海*/
 #define kSafeTop    [SKCustomFunction getTopSafe]
 #define kSafeBottom [SKCustomFunction getBottomSafe]
 
