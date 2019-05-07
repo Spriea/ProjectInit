@@ -118,8 +118,9 @@
 /**
  从系统相册或相机获取照片
  @param title alertsheet的标题
+ @param edit 选择图片是否可编辑
  */
-- (void)photoFromAlbumOrCamera:(NSString *)title;
+- (void)photoFromAlbumOrCamera:(NSString *)title isEdit:(BOOL)edit;
 
 
 /**

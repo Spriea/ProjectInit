@@ -308,8 +308,7 @@ struct utsname systemInfo;
     [LBPhotoBrowserManager defaultManager].needPreloading = NO;
 }
 
-
-- (void)photoFromAlbumOrCamera:(NSString *)title{
+- (void)photoFromAlbumOrCamera:(NSString *)title isEdit:(BOOL)edit{
     UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:title message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
     kWEAK_SELF(weakS)
@@ -319,7 +318,7 @@ struct utsname systemInfo;
             [SKCustomFunction checkCameraAuth:^{
                 UIImagePickerController *picker = [[UIImagePickerController alloc] init];
                 picker.delegate = weakS;
-                picker.allowsEditing = NO;
+                picker.allowsEditing = edit;
                 picker.sourceType = UIImagePickerControllerSourceTypeCamera;
                 [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:picker animated:YES completion:nil];
             }];
@@ -339,7 +338,7 @@ struct utsname systemInfo;
             [SKCustomFunction checkPhotoAuth:^{
                 UIImagePickerController *picker = [[UIImagePickerController alloc] init];
                 picker.delegate = weakS;
-                picker.allowsEditing = NO;
+                picker.allowsEditing = edit;
                 picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
                 [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:picker animated:YES completion:nil];
             }];
