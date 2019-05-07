@@ -318,18 +318,18 @@
             }
         }
     });
-    if (allCount == 0){
-//        if (self.noMoreData.hasInfo) {  // 设置了信息的情况
-//            [scrollView addSubview:self.noMoreData];
-//            self.noMoreData.hidden = NO;
-//        }
-                [scrollView.mj_footer setHidden:YES];
-    }else{
-//        if (self.noMoreData.hasInfo) { // 设置了信息的情况
-//            self.noMoreData.hidden = YES;
-//        }
-                [scrollView.mj_footer setHidden:NO];
-    }
+//    if (allCount == 0){
+////        if (self.noMoreData.hasInfo) {  // 设置了信息的情况
+////            [scrollView addSubview:self.noMoreData];
+////            self.noMoreData.hidden = NO;
+////        }
+//                [scrollView.mj_footer setHidden:YES];
+//    }else{
+////        if (self.noMoreData.hasInfo) { // 设置了信息的情况
+////            self.noMoreData.hidden = YES;
+////        }
+//                [scrollView.mj_footer setHidden:NO];
+//    }
 }
 
 //- (void)showNoDataImage:(UIImage *)img desTitle:(NSString *)title{
