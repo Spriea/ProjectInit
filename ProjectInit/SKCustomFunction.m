@@ -113,8 +113,47 @@ struct utsname systemInfo;
 // 弹出选择提示框
 + (void)alertSheetWithTitle:(NSString *)title message:(NSString *)message confTitle:(NSString *)btnTitle confirmHandler:(void (^)(UIAlertAction *action))confirmHandler cancleHandler:(void (^)(UIAlertAction *action))cancleHandler{
 //    message = @"账号／密码错误或账号密码组合错误，详情请查看帮助。";
-    SKAlertView *myAlert = [SKAlertView initWithMsg:message confirmBtn:btnTitle confirmHandler:confirmHandler cancleHandler:cancleHandler];
-    [[UIApplication sharedApplication].keyWindow addSubview:myAlert];
+//    SKAlertView *myAlert = [SKAlertView initWithMsg:message confirmBtn:btnTitle confirmHandler:confirmHandler cancleHandler:cancleHandler];
+//    [[UIApplication sharedApplication].keyWindow addSubview:myAlert];
+    
+    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleAlert];
+    
+    if (title != nil) {
+        // change color of title
+        NSMutableAttributedString *alertTitle = [[NSMutableAttributedString alloc] initWithString:title];
+        [alertTitle addAttribute:NSForegroundColorAttributeName value:Color(@"#333333") range:NSMakeRange(0, alertTitle.length)];
+        [alertVc setValue:alertTitle forKey:@"attributedTitle"];
+    }
+    
+    if (message != nil) {
+        // change color of message
+        NSMutableAttributedString *alertMsg = [[NSMutableAttributedString alloc] initWithString:message];
+        [alertMsg addAttribute:NSForegroundColorAttributeName value:Color(@"#333333") range:NSMakeRange(0, alertMsg.length)];
+        [alertVc setValue:alertMsg forKey:@"attributedMessage"];
+    }
+    
+    if (cancleHandler != nil) {
+        UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:cancleHandler];
+        [alertVc addAction:action1];
+        
+        if (IOS_Later(9.0)) {
+            [action1 setValue:Color(@"#999999") forKey:@"titleTextColor"];
+        }
+    }
+    
+    if (confirmHandler != nil) {
+        if (btnTitle == nil) {
+            btnTitle = @"确认";
+        }
+        UIAlertAction *action2 = [UIAlertAction actionWithTitle:btnTitle style:UIAlertActionStyleDefault handler:confirmHandler];
+        [alertVc addAction:action2];
+        
+        if (IOS_Later(9.0)) {
+            [action2 setValue:kMainColor forKey:@"titleTextColor"];
+        }
+    }
+    
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertVc animated:YES completion:nil];
 }
 
 // 根据编码获取对应语言文字
