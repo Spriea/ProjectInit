@@ -162,6 +162,11 @@ static AFHTTPSessionManager *_manager = nil;
     
     // 请求失败回调Block
     ErrorB errorB = ^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
+        [SVProgressHUD setImageViewSize:CGSizeMake(28, 28)];
+        if (hud) {
+            [SVProgressHUD dismiss];
+        }
         if (errorBlock && error) {
             errorBlock(error);
         }
@@ -173,11 +178,8 @@ static AFHTTPSessionManager *_manager = nil;
             NSData *data = derlyingErro.userInfo[@"com.alamofire.serialization.response.error.data"];
             NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
             SKLog(@"%@" ,result);
-        }
-        if (hud) {
-            [SVProgressHUD dismiss];
-            [SVProgressHUD setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
-            [SVProgressHUD setImageViewSize:CGSizeMake(28, 28)];
+            
+            [SVProgressHUD showErrorWithStatus:@"服务器异常，请稍后再试！"];
         }
     };
     
