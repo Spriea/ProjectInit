@@ -8,19 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D493D1562E2A1409D38D21DF /* libPods-ProjectInit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FCE478909EF7860FB0CCF7 /* libPods-ProjectInit.a */; };
+		F32377DB25E89E5F00AEE5ED /* LBOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377C825E89E5F00AEE5ED /* LBOptionView.m */; };
+		F32377DC25E89E5F00AEE5ED /* LBPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F32377C925E89E5F00AEE5ED /* LBPhotoBrowser.bundle */; };
+		F32377DD25E89E5F00AEE5ED /* LBPhotoBrowserConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377CA25E89E5F00AEE5ED /* LBPhotoBrowserConst.m */; };
+		F32377DE25E89E5F00AEE5ED /* UIView+LBFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377CB25E89E5F00AEE5ED /* UIView+LBFrame.m */; };
+		F32377DF25E89E5F00AEE5ED /* LBLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377CC25E89E5F00AEE5ED /* LBLoadingView.m */; };
+		F32377E025E89E5F00AEE5ED /* LBPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377CE25E89E5F00AEE5ED /* LBPhotoBrowserView.m */; };
+		F32377E125E89E5F00AEE5ED /* LBPhotoBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377CF25E89E5F00AEE5ED /* LBPhotoBrowserManager.m */; };
+		F32377E225E89E5F00AEE5ED /* UIImage+LBDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377D025E89E5F00AEE5ED /* UIImage+LBDecoder.m */; };
+		F32377E325E89E5F00AEE5ED /* LBZoomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377D425E89E5F00AEE5ED /* LBZoomScrollView.m */; };
+		F32377E425E89E5F00AEE5ED /* LBTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377D925E89E5F00AEE5ED /* LBTapDetectingImageView.m */; };
+		F32377E825E89EF600AEE5ED /* SKMainTabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377E725E89EF600AEE5ED /* SKMainTabVC.m */; };
+		F32377ED25E89FC000AEE5ED /* SKMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377EC25E89FC000AEE5ED /* SKMineVC.m */; };
+		F32377F525E8A0F800AEE5ED /* SKModalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377F425E8A0F800AEE5ED /* SKModalVC.m */; };
+		F32377FA25E8A10900AEE5ED /* SKResourceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377F925E8A10900AEE5ED /* SKResourceVC.m */; };
+		F32377FE25E8A11700AEE5ED /* SKDiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F32377FD25E8A11700AEE5ED /* SKDiscoverVC.m */; };
 		F370F5042276DC580079EDE4 /* SKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F370F5002276DC580079EDE4 /* SKAlertView.m */; };
 		F370F5052276DC580079EDE4 /* SKNewVersionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F370F5012276DC580079EDE4 /* SKNewVersionView.m */; };
 		F39DB402226EDCCA0035A926 /* SKCustomFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB400226EDCCA0035A926 /* SKCustomFunction.m */; };
-		F39DB417226EDD500035A926 /* LBOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB404226EDD500035A926 /* LBOptionView.m */; };
-		F39DB418226EDD500035A926 /* LBPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F39DB405226EDD500035A926 /* LBPhotoBrowser.bundle */; };
-		F39DB419226EDD500035A926 /* LBPhotoBrowserConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB406226EDD500035A926 /* LBPhotoBrowserConst.m */; };
-		F39DB41A226EDD500035A926 /* UIView+LBFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB407226EDD500035A926 /* UIView+LBFrame.m */; };
-		F39DB41B226EDD500035A926 /* LBLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB408226EDD500035A926 /* LBLoadingView.m */; };
-		F39DB41C226EDD500035A926 /* LBPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB40A226EDD500035A926 /* LBPhotoBrowserView.m */; };
-		F39DB41D226EDD500035A926 /* LBPhotoBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB40B226EDD500035A926 /* LBPhotoBrowserManager.m */; };
-		F39DB41E226EDD500035A926 /* UIImage+LBDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB40C226EDD500035A926 /* UIImage+LBDecoder.m */; };
-		F39DB41F226EDD500035A926 /* LBZoomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB410226EDD500035A926 /* LBZoomScrollView.m */; };
-		F39DB420226EDD500035A926 /* LBTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB415226EDD500035A926 /* LBTapDetectingImageView.m */; };
 		F39DB435226EDDB20035A926 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB425226EDDB20035A926 /* UIView+Frame.m */; };
 		F39DB436226EDDB20035A926 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB426226EDDB20035A926 /* NSDate+Formatter.m */; };
 		F39DB437226EDDB20035A926 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F39DB427226EDDB20035A926 /* UIButton+Category.m */; };
@@ -64,31 +69,41 @@
 		4B6B0858098E00DCABE97A7B /* Pods-ProjectInit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectInit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectInit/Pods-ProjectInit.debug.xcconfig"; sourceTree = "<group>"; };
 		9FC77C1105A17983CE1F1F29 /* Pods-ProjectInit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectInit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectInit/Pods-ProjectInit.release.xcconfig"; sourceTree = "<group>"; };
 		B5FCE478909EF7860FB0CCF7 /* libPods-ProjectInit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectInit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32377C825E89E5F00AEE5ED /* LBOptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBOptionView.m; sourceTree = "<group>"; };
+		F32377C925E89E5F00AEE5ED /* LBPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LBPhotoBrowser.bundle; sourceTree = "<group>"; };
+		F32377CA25E89E5F00AEE5ED /* LBPhotoBrowserConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBPhotoBrowserConst.m; sourceTree = "<group>"; };
+		F32377CB25E89E5F00AEE5ED /* UIView+LBFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBFrame.m"; sourceTree = "<group>"; };
+		F32377CC25E89E5F00AEE5ED /* LBLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLoadingView.m; sourceTree = "<group>"; };
+		F32377CD25E89E5F00AEE5ED /* LBZoomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBZoomScrollView.h; sourceTree = "<group>"; };
+		F32377CE25E89E5F00AEE5ED /* LBPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBPhotoBrowserView.m; sourceTree = "<group>"; };
+		F32377CF25E89E5F00AEE5ED /* LBPhotoBrowserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBPhotoBrowserManager.m; sourceTree = "<group>"; };
+		F32377D025E89E5F00AEE5ED /* UIImage+LBDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LBDecoder.m"; sourceTree = "<group>"; };
+		F32377D125E89E5F00AEE5ED /* LBTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTapDetectingImageView.h; sourceTree = "<group>"; };
+		F32377D225E89E5F00AEE5ED /* LBOptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBOptionView.h; sourceTree = "<group>"; };
+		F32377D325E89E5F00AEE5ED /* LBPhotoBrowserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBPhotoBrowserManager.h; sourceTree = "<group>"; };
+		F32377D425E89E5F00AEE5ED /* LBZoomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBZoomScrollView.m; sourceTree = "<group>"; };
+		F32377D525E89E5F00AEE5ED /* LBPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBPhotoBrowserView.h; sourceTree = "<group>"; };
+		F32377D625E89E5F00AEE5ED /* LBLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLoadingView.h; sourceTree = "<group>"; };
+		F32377D725E89E5F00AEE5ED /* UIView+LBFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBFrame.h"; sourceTree = "<group>"; };
+		F32377D825E89E5F00AEE5ED /* LBPhotoBrowserConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBPhotoBrowserConst.h; sourceTree = "<group>"; };
+		F32377D925E89E5F00AEE5ED /* LBTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTapDetectingImageView.m; sourceTree = "<group>"; };
+		F32377DA25E89E5F00AEE5ED /* UIImage+LBDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LBDecoder.h"; sourceTree = "<group>"; };
+		F32377E625E89EF600AEE5ED /* SKMainTabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMainTabVC.h; sourceTree = "<group>"; };
+		F32377E725E89EF600AEE5ED /* SKMainTabVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMainTabVC.m; sourceTree = "<group>"; };
+		F32377EB25E89FC000AEE5ED /* SKMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKMineVC.h; sourceTree = "<group>"; };
+		F32377EC25E89FC000AEE5ED /* SKMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKMineVC.m; sourceTree = "<group>"; };
+		F32377F325E8A0F800AEE5ED /* SKModalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKModalVC.h; sourceTree = "<group>"; };
+		F32377F425E8A0F800AEE5ED /* SKModalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKModalVC.m; sourceTree = "<group>"; };
+		F32377F825E8A10900AEE5ED /* SKResourceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKResourceVC.h; sourceTree = "<group>"; };
+		F32377F925E8A10900AEE5ED /* SKResourceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKResourceVC.m; sourceTree = "<group>"; };
+		F32377FC25E8A11700AEE5ED /* SKDiscoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKDiscoverVC.h; sourceTree = "<group>"; };
+		F32377FD25E8A11700AEE5ED /* SKDiscoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKDiscoverVC.m; sourceTree = "<group>"; };
 		F370F5002276DC580079EDE4 /* SKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAlertView.m; sourceTree = "<group>"; };
 		F370F5012276DC580079EDE4 /* SKNewVersionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNewVersionView.m; sourceTree = "<group>"; };
 		F370F5022276DC580079EDE4 /* SKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAlertView.h; sourceTree = "<group>"; };
 		F370F5032276DC580079EDE4 /* SKNewVersionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNewVersionView.h; sourceTree = "<group>"; };
 		F39DB400226EDCCA0035A926 /* SKCustomFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCustomFunction.m; sourceTree = "<group>"; };
 		F39DB401226EDCCA0035A926 /* SKCustomFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCustomFunction.h; sourceTree = "<group>"; };
-		F39DB404226EDD500035A926 /* LBOptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBOptionView.m; sourceTree = "<group>"; };
-		F39DB405226EDD500035A926 /* LBPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LBPhotoBrowser.bundle; sourceTree = "<group>"; };
-		F39DB406226EDD500035A926 /* LBPhotoBrowserConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBPhotoBrowserConst.m; sourceTree = "<group>"; };
-		F39DB407226EDD500035A926 /* UIView+LBFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBFrame.m"; sourceTree = "<group>"; };
-		F39DB408226EDD500035A926 /* LBLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLoadingView.m; sourceTree = "<group>"; };
-		F39DB409226EDD500035A926 /* LBZoomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBZoomScrollView.h; sourceTree = "<group>"; };
-		F39DB40A226EDD500035A926 /* LBPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBPhotoBrowserView.m; sourceTree = "<group>"; };
-		F39DB40B226EDD500035A926 /* LBPhotoBrowserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBPhotoBrowserManager.m; sourceTree = "<group>"; };
-		F39DB40C226EDD500035A926 /* UIImage+LBDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LBDecoder.m"; sourceTree = "<group>"; };
-		F39DB40D226EDD500035A926 /* LBTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTapDetectingImageView.h; sourceTree = "<group>"; };
-		F39DB40E226EDD500035A926 /* LBOptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBOptionView.h; sourceTree = "<group>"; };
-		F39DB40F226EDD500035A926 /* LBPhotoBrowserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBPhotoBrowserManager.h; sourceTree = "<group>"; };
-		F39DB410226EDD500035A926 /* LBZoomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBZoomScrollView.m; sourceTree = "<group>"; };
-		F39DB411226EDD500035A926 /* LBPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBPhotoBrowserView.h; sourceTree = "<group>"; };
-		F39DB412226EDD500035A926 /* LBLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLoadingView.h; sourceTree = "<group>"; };
-		F39DB413226EDD500035A926 /* UIView+LBFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBFrame.h"; sourceTree = "<group>"; };
-		F39DB414226EDD500035A926 /* LBPhotoBrowserConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBPhotoBrowserConst.h; sourceTree = "<group>"; };
-		F39DB415226EDD500035A926 /* LBTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTapDetectingImageView.m; sourceTree = "<group>"; };
-		F39DB416226EDD500035A926 /* UIImage+LBDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LBDecoder.h"; sourceTree = "<group>"; };
 		F39DB422226EDDB20035A926 /* UIImage+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
 		F39DB423226EDDB20035A926 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
 		F39DB424226EDDB20035A926 /* UIColor+XQColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XQColor.h"; sourceTree = "<group>"; };
@@ -196,6 +211,76 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F32377A525E8939300AEE5ED /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				F32377EA25E89F9E00AEE5ED /* Controller */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		F32377C725E89E5F00AEE5ED /* LBPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				F32377C825E89E5F00AEE5ED /* LBOptionView.m */,
+				F32377C925E89E5F00AEE5ED /* LBPhotoBrowser.bundle */,
+				F32377CA25E89E5F00AEE5ED /* LBPhotoBrowserConst.m */,
+				F32377CB25E89E5F00AEE5ED /* UIView+LBFrame.m */,
+				F32377CC25E89E5F00AEE5ED /* LBLoadingView.m */,
+				F32377CD25E89E5F00AEE5ED /* LBZoomScrollView.h */,
+				F32377CE25E89E5F00AEE5ED /* LBPhotoBrowserView.m */,
+				F32377CF25E89E5F00AEE5ED /* LBPhotoBrowserManager.m */,
+				F32377D025E89E5F00AEE5ED /* UIImage+LBDecoder.m */,
+				F32377D125E89E5F00AEE5ED /* LBTapDetectingImageView.h */,
+				F32377D225E89E5F00AEE5ED /* LBOptionView.h */,
+				F32377D325E89E5F00AEE5ED /* LBPhotoBrowserManager.h */,
+				F32377D425E89E5F00AEE5ED /* LBZoomScrollView.m */,
+				F32377D525E89E5F00AEE5ED /* LBPhotoBrowserView.h */,
+				F32377D625E89E5F00AEE5ED /* LBLoadingView.h */,
+				F32377D725E89E5F00AEE5ED /* UIView+LBFrame.h */,
+				F32377D825E89E5F00AEE5ED /* LBPhotoBrowserConst.h */,
+				F32377D925E89E5F00AEE5ED /* LBTapDetectingImageView.m */,
+				F32377DA25E89E5F00AEE5ED /* UIImage+LBDecoder.h */,
+			);
+			path = LBPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		F32377EA25E89F9E00AEE5ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F32377EB25E89FC000AEE5ED /* SKMineVC.h */,
+				F32377EC25E89FC000AEE5ED /* SKMineVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F32377F025E8A08A00AEE5ED /* 模板 */ = {
+			isa = PBXGroup;
+			children = (
+				F32377F325E8A0F800AEE5ED /* SKModalVC.h */,
+				F32377F425E8A0F800AEE5ED /* SKModalVC.m */,
+			);
+			path = "模板";
+			sourceTree = "<group>";
+		};
+		F32377F125E8A0AA00AEE5ED /* 资源 */ = {
+			isa = PBXGroup;
+			children = (
+				F32377F825E8A10900AEE5ED /* SKResourceVC.h */,
+				F32377F925E8A10900AEE5ED /* SKResourceVC.m */,
+			);
+			path = "资源";
+			sourceTree = "<group>";
+		};
+		F32377F225E8A0B400AEE5ED /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				F32377FC25E8A11700AEE5ED /* SKDiscoverVC.h */,
+				F32377FD25E8A11700AEE5ED /* SKDiscoverVC.m */,
+			);
+			path = "发现";
+			sourceTree = "<group>";
+		};
 		F370F4FF2276DC580079EDE4 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,32 +290,6 @@
 				F370F5002276DC580079EDE4 /* SKAlertView.m */,
 			);
 			path = UIView;
-			sourceTree = "<group>";
-		};
-		F39DB403226EDD500035A926 /* LBPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				F39DB404226EDD500035A926 /* LBOptionView.m */,
-				F39DB405226EDD500035A926 /* LBPhotoBrowser.bundle */,
-				F39DB406226EDD500035A926 /* LBPhotoBrowserConst.m */,
-				F39DB407226EDD500035A926 /* UIView+LBFrame.m */,
-				F39DB408226EDD500035A926 /* LBLoadingView.m */,
-				F39DB409226EDD500035A926 /* LBZoomScrollView.h */,
-				F39DB40A226EDD500035A926 /* LBPhotoBrowserView.m */,
-				F39DB40B226EDD500035A926 /* LBPhotoBrowserManager.m */,
-				F39DB40C226EDD500035A926 /* UIImage+LBDecoder.m */,
-				F39DB40D226EDD500035A926 /* LBTapDetectingImageView.h */,
-				F39DB40E226EDD500035A926 /* LBOptionView.h */,
-				F39DB40F226EDD500035A926 /* LBPhotoBrowserManager.h */,
-				F39DB410226EDD500035A926 /* LBZoomScrollView.m */,
-				F39DB411226EDD500035A926 /* LBPhotoBrowserView.h */,
-				F39DB412226EDD500035A926 /* LBLoadingView.h */,
-				F39DB413226EDD500035A926 /* UIView+LBFrame.h */,
-				F39DB414226EDD500035A926 /* LBPhotoBrowserConst.h */,
-				F39DB415226EDD500035A926 /* LBTapDetectingImageView.m */,
-				F39DB416226EDD500035A926 /* UIImage+LBDecoder.h */,
-			);
-			path = LBPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		F39DB421226EDDB20035A926 /* Category */ = {
@@ -295,12 +354,14 @@
 		F3C7BB0222559CF8000C9C1D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F39DB421226EDDB20035A926 /* Category */,
 				F3C7BB682255A507000C9C1D /* Main */,
-				F3C7BB0D22559CF8000C9C1D /* Lib */,
+				F39DB421226EDDB20035A926 /* Category */,
 				F3C7BB0E22559CF8000C9C1D /* Login */,
 				F3C7BB0322559CF8000C9C1D /* Home */,
-				F3C7BB0922559CF8000C9C1D /* Mine */,
+				F32377F225E8A0B400AEE5ED /* 发现 */,
+				F32377F125E8A0AA00AEE5ED /* 资源 */,
+				F32377F025E8A08A00AEE5ED /* 模板 */,
+				F32377A525E8939300AEE5ED /* Me */,
 				F3C7BB0822559CF8000C9C1D /* Common */,
 			);
 			path = Classes;
@@ -310,8 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				F3C7BB0422559CF8000C9C1D /* Controller */,
-				F3C7BB0522559CF8000C9C1D /* View */,
-				F3C7BB0622559CF8000C9C1D /* Modal */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -323,20 +382,6 @@
 				F3C7BBAF2255B11A000C9C1D /* SKHomeVC.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		F3C7BB0522559CF8000C9C1D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F3C7BB0622559CF8000C9C1D /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modal;
 			sourceTree = "<group>";
 		};
 		F3C7BB0822559CF8000C9C1D /* Common */ = {
@@ -351,44 +396,6 @@
 				F3C7BB1422559EBB000C9C1D /* SKHTTPTool.m */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		F3C7BB0922559CF8000C9C1D /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				F3C7BB0A22559CF8000C9C1D /* Controller */,
-				F3C7BB0B22559CF8000C9C1D /* View */,
-				F3C7BB0C22559CF8000C9C1D /* Modal */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		F3C7BB0A22559CF8000C9C1D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F3C7BB0B22559CF8000C9C1D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F3C7BB0C22559CF8000C9C1D /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modal;
-			sourceTree = "<group>";
-		};
-		F3C7BB0D22559CF8000C9C1D /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		F3C7BB0E22559CF8000C9C1D /* Login */ = {
@@ -505,7 +512,9 @@
 		F3C7BBA32255A60B000C9C1D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F39DB403226EDD500035A926 /* LBPhotoBrowser */,
+				F32377C725E89E5F00AEE5ED /* LBPhotoBrowser */,
+				F32377E625E89EF600AEE5ED /* SKMainTabVC.h */,
+				F32377E725E89EF600AEE5ED /* SKMainTabVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -581,7 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C7BAF922559B9E000C9C1D /* LaunchScreen.storyboard in Resources */,
-				F39DB418226EDD500035A926 /* LBPhotoBrowser.bundle in Resources */,
+				F32377DC25E89E5F00AEE5ED /* LBPhotoBrowser.bundle in Resources */,
 				F3C7BB382255A42E000C9C1D /* SVProgressHUD.bundle in Resources */,
 				F3C7BAF622559B9E000C9C1D /* Assets.xcassets in Resources */,
 			);
@@ -632,19 +641,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39DB41A226EDD500035A926 /* UIView+LBFrame.m in Sources */,
+				F32377FA25E8A10900AEE5ED /* SKResourceVC.m in Sources */,
 				F39DB438226EDDB20035A926 /* UIImage+Image.m in Sources */,
 				F3C7BB1A22559EBB000C9C1D /* SKHTTPError.m in Sources */,
+				F32377F525E8A0F800AEE5ED /* SKModalVC.m in Sources */,
 				F3C7BB9E2255A58D000C9C1D /* SKWMBLabel.m in Sources */,
 				F3C7BB352255A42E000C9C1D /* SVProgressAnimatedView.m in Sources */,
-				F39DB41F226EDD500035A926 /* LBZoomScrollView.m in Sources */,
 				F370F5052276DC580079EDE4 /* SKNewVersionView.m in Sources */,
+				F32377E125E89E5F00AEE5ED /* LBPhotoBrowserManager.m in Sources */,
 				F39DB43B226EDDB20035A926 /* UIImage+Render.m in Sources */,
 				F3C7BB992255A58D000C9C1D /* SKAddPersonView.m in Sources */,
 				F3C7BB342255A42E000C9C1D /* SVRadialGradientLayer.m in Sources */,
 				F39DB43A226EDDB20035A926 /* UIColor+XQColor.m in Sources */,
 				F3C7BBA22255A5BA000C9C1D /* SKUserItem.m in Sources */,
 				F39DB435226EDDB20035A926 /* UIView+Frame.m in Sources */,
+				F32377E425E89E5F00AEE5ED /* LBTapDetectingImageView.m in Sources */,
 				F3C7BB1922559EBB000C9C1D /* SKHTTPTool.m in Sources */,
 				F3C7BB982255A58D000C9C1D /* SKBaseSelectCell.m in Sources */,
 				F3C7BB9D2255A58D000C9C1D /* SKImgView.m in Sources */,
@@ -654,30 +665,33 @@
 				F39DB43C226EDDB20035A926 /* NSString+Category.m in Sources */,
 				F39DB43E226EDDB20035A926 /* NSBundle+RDLanguage.m in Sources */,
 				F3C7BB9B2255A58D000C9C1D /* SKSameLabel.m in Sources */,
-				F39DB41C226EDD500035A926 /* LBPhotoBrowserView.m in Sources */,
+				F32377E025E89E5F00AEE5ED /* LBPhotoBrowserView.m in Sources */,
 				F3C7BB9A2255A58D000C9C1D /* SKBaseTableViewCell.m in Sources */,
+				F32377DB25E89E5F00AEE5ED /* LBOptionView.m in Sources */,
 				F39DB436226EDDB20035A926 /* NSDate+Formatter.m in Sources */,
+				F32377DD25E89E5F00AEE5ED /* LBPhotoBrowserConst.m in Sources */,
+				F32377DE25E89E5F00AEE5ED /* UIView+LBFrame.m in Sources */,
 				F3C7BB9C2255A58D000C9C1D /* SKUnSelBtn.m in Sources */,
 				F3C7BB222255A2E5000C9C1D /* SKTableManager.m in Sources */,
-				F39DB420226EDD500035A926 /* LBTapDetectingImageView.m in Sources */,
 				F3C7BB232255A2E5000C9C1D /* SKFileManager.m in Sources */,
-				F39DB417226EDD500035A926 /* LBOptionView.m in Sources */,
 				F3C7BBA62255A627000C9C1D /* SKBaseNav.m in Sources */,
 				F3C7BAFC22559B9E000C9C1D /* main.m in Sources */,
-				F39DB41D226EDD500035A926 /* LBPhotoBrowserManager.m in Sources */,
+				F32377E825E89EF600AEE5ED /* SKMainTabVC.m in Sources */,
 				F39DB402226EDCCA0035A926 /* SKCustomFunction.m in Sources */,
 				F3C7BAEE22559B9A000C9C1D /* AppDelegate.m in Sources */,
 				F3C7BBB02255B11A000C9C1D /* SKHomeVC.m in Sources */,
-				F39DB41E226EDD500035A926 /* UIImage+LBDecoder.m in Sources */,
+				F32377ED25E89FC000AEE5ED /* SKMineVC.m in Sources */,
 				F3C7BB362255A42E000C9C1D /* SVProgressHUD.m in Sources */,
+				F32377FE25E8A11700AEE5ED /* SKDiscoverVC.m in Sources */,
 				F3C7BB282255A321000C9C1D /* SKTokenStatic.m in Sources */,
+				F32377DF25E89E5F00AEE5ED /* LBLoadingView.m in Sources */,
 				F3C7BB372255A42E000C9C1D /* SVIndefiniteAnimatedView.m in Sources */,
+				F32377E325E89E5F00AEE5ED /* LBZoomScrollView.m in Sources */,
 				F39DB437226EDDB20035A926 /* UIButton+Category.m in Sources */,
 				F39DB441226EDE1B0035A926 /* SKBaseVC.m in Sources */,
 				F39DB43D226EDDB20035A926 /* Foundation+Log.m in Sources */,
+				F32377E225E89E5F00AEE5ED /* UIImage+LBDecoder.m in Sources */,
 				F39DB439226EDDB20035A926 /* UILabel+Category.m in Sources */,
-				F39DB419226EDD500035A926 /* LBPhotoBrowserConst.m in Sources */,
-				F39DB41B226EDD500035A926 /* LBLoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,7 +827,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J74EH4F9KL;
+				DEVELOPMENT_TEAM = R34S8N78F8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectInit/ProjectInit.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ProjectInit/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -833,7 +847,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J74EH4F9KL;
+				DEVELOPMENT_TEAM = R34S8N78F8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectInit/ProjectInit.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ProjectInit/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

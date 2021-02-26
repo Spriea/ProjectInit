@@ -13,6 +13,7 @@
 #import "UIImage+LBDecoder.h"
 
 #if __has_include(<SDWebImage/SDWebImageManager.h>)
+#import <SDImageCache.h>
 #import <SDWebImage/SDWebImageManager.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/SDImageCacheConfig.h>

@@ -19,18 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.mapView];
-    
-    [self.mapView setCenterCoordinate:_mapView.userLocation.coordinate animated:YES];
-}
-
-- (MKMapView *)mapView{
-    if (!_mapView) {
-        _mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
-        _mapView.delegate = self;
-        _mapView.userTrackingMode = MKUserTrackingModeFollowWithHeading;
-    }
-    return _mapView;
+    self.title = @"首页";
 }
 
 @end

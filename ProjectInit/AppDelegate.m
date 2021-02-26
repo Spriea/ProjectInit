@@ -10,6 +10,7 @@
 #import <IQKeyboardManager.h>
 #import "SKHomeVC.h"
 #import "SKBaseNav.h"
+#import "SKMainTabVC.h"
 
 @interface AppDelegate ()
 
@@ -32,9 +33,8 @@
     
     // 2.创建根控制器
 //    [self setupRootVC];
-    SKHomeVC *homeVC = [[SKHomeVC alloc] init];
-    SKBaseNav *navB = [[SKBaseNav alloc] initWithRootViewController:homeVC];
-    self.window.rootViewController = navB;
+    SKMainTabVC *mainVC = [[SKMainTabVC alloc] init];
+    self.window.rootViewController = mainVC;
     
     //    [self getLocation];
     // 3、查看是否有推送的消息

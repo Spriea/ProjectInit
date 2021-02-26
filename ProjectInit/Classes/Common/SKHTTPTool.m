@@ -185,9 +185,9 @@ static AFHTTPSessionManager *_manager = nil;
     
     // 判读是什么网络请求
     if (requsetType == SKRequsetTypePOST) { // POST请求
-        [[self manager] POST:URLString parameters:parmarMut progress:nil success:successB failure:errorB];
+        [[self manager] POST:URLString parameters:parmarMut headers:nil progress:nil success:successB failure:errorB];
     }else {
-        [[self manager] GET:URLString parameters:parmarMut progress:nil success:successB failure:errorB];
+        [[self manager] GET:URLString parameters:parmarMut headers:nil progress:nil success:successB failure:errorB];
     }
 
 }
@@ -221,79 +221,79 @@ static AFHTTPSessionManager *_manager = nil;
     
     SKLog(@"%@ %@", URLString, parmarMut);
     
-    [[self manager] POST:URLString parameters:parmarMut constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        if (headerImg == nil) {
-            return ;
-        }
-        if ([headerImg isKindOfClass:[UIImage class]]) {
-            NSData *imageData = UIImageJPEGRepresentation(headerImg, 1);
-            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-            formatter.dateFormat = @"yyyyMMddHHmmss";
-            NSString *timeStr = [formatter stringFromDate:[NSDate date]];
-            NSString *imageName = [NSString stringWithFormat:@"%@.jpg", timeStr];
-            
-            [formData appendPartWithFileData:imageData name:strName fileName:imageName mimeType:@"image/jpeg"];
-        }else{
-            NSString *mimeType = [SKHTTPTool mimeTypeForFileAtPath:(NSString *)headerImg];
-            if (mimeType == nil) {
-//                [SKCustomFunction alertSheetWithTitle:nil message:kLanguage(@"msg_chat_file_down_nofind") handler:^(UIAlertAction *action) {}];
-                return ;
-            }
-            [formData appendPartWithFileURL:[NSURL fileURLWithPath:(NSString *)headerImg] name:strName fileName:[(NSString *)headerImg lastPathComponent] mimeType:mimeType error:nil];
-        }
-    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-#ifdef DEBUG   // 调试
-        NSData *d = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
-        SKLog(@"responseObject-----%@", [[NSString alloc] initWithData:d encoding:NSUTF8StringEncoding]);
-#endif
-        
-        if (hud) {
-            [SVProgressHUD dismiss];
-            [SVProgressHUD setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
-            [SVProgressHUD setImageViewSize:CGSizeMake(28, 28)];
-        }
-        //        NSData *data = [responseObject dataUsingEncoding:NSUTF8StringEncoding];
-        
-        NSDictionary *dict = responseObject;
-        NSString *reqFlag = [NSString stringWithFormat:@"%@", dict[@"code"]];
-        if ([@"2000" isEqualToString:reqFlag]) {
-            successBlock(dict, nil);
-        }else{
-            if (hud) {
-                [SVProgressHUD dismiss];
-                [SVProgressHUD setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
-                [SVProgressHUD setImageViewSize:CGSizeMake(28, 28)];
-            }
-            if ([URLString containsString:u_version]) {
-                return ;
-            }
-//            SKLog(@"错误URL:%@  %@", URLString, parmarMut);
-//            if ([@"5000" isEqualToString:reqFlag] || [@"4003" isEqualToString:reqFlag] || [@"4000" isEqualToString:reqFlag] || [@"4002" isEqualToString:reqFlag]) {
+//    [[self manager] POST:URLString parameters:parmarMut constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+//        if (headerImg == nil) {
+//            return ;
+//        }
+//        if ([headerImg isKindOfClass:[UIImage class]]) {
+//            NSData *imageData = UIImageJPEGRepresentation(headerImg, 1);
+//            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//            formatter.dateFormat = @"yyyyMMddHHmmss";
+//            NSString *timeStr = [formatter stringFromDate:[NSDate date]];
+//            NSString *imageName = [NSString stringWithFormat:@"%@.jpg", timeStr];
+//            
+//            [formData appendPartWithFileData:imageData name:strName fileName:imageName mimeType:@"image/jpeg"];
+//        }else{
+//            NSString *mimeType = [SKHTTPTool mimeTypeForFileAtPath:(NSString *)headerImg];
+//            if (mimeType == nil) {
+////                [SKCustomFunction alertSheetWithTitle:nil message:kLanguage(@"msg_chat_file_down_nofind") handler:^(UIAlertAction *action) {}];
+//                return ;
+//            }
+//            [formData appendPartWithFileURL:[NSURL fileURLWithPath:(NSString *)headerImg] name:strName fileName:[(NSString *)headerImg lastPathComponent] mimeType:mimeType error:nil];
+//        }
+//    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//#ifdef DEBUG   // 调试
+//        NSData *d = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
+//        SKLog(@"responseObject-----%@", [[NSString alloc] initWithData:d encoding:NSUTF8StringEncoding]);
+//#endif
+//        
+//        if (hud) {
+//            [SVProgressHUD dismiss];
+//            [SVProgressHUD setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
+//            [SVProgressHUD setImageViewSize:CGSizeMake(28, 28)];
+//        }
+//        //        NSData *data = [responseObject dataUsingEncoding:NSUTF8StringEncoding];
+//        
+//        NSDictionary *dict = responseObject;
+//        NSString *reqFlag = [NSString stringWithFormat:@"%@", dict[@"code"]];
+//        if ([@"2000" isEqualToString:reqFlag]) {
+//            successBlock(dict, nil);
+//        }else{
+//            if (hud) {
+//                [SVProgressHUD dismiss];
+//                [SVProgressHUD setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
+//                [SVProgressHUD setImageViewSize:CGSizeMake(28, 28)];
+//            }
+//            if ([URLString containsString:u_version]) {
+//                return ;
+//            }
+////            SKLog(@"错误URL:%@  %@", URLString, parmarMut);
+////            if ([@"5000" isEqualToString:reqFlag] || [@"4003" isEqualToString:reqFlag] || [@"4000" isEqualToString:reqFlag] || [@"4002" isEqualToString:reqFlag]) {
+////                [SVProgressHUD showErrorWithStatus:dict[@"msg"]];
+////            }
+//            
+//            
+//            if ([@"4001" isEqualToString:reqFlag]) {
+//                [SKCustomFunction alertSheetWithTitle:nil message:@"身份验证失效，请重新登录" confTitle:nil confirmHandler:^(UIAlertAction *action) {
+//                    [SKUserListModal removeTokenValue:[SKTokenStatic getToken]];
+//                    [SKTokenStatic saveToken:nil];
+//                    [SKCustomFunction jumpToLogin];
+//                } cancleHandler:^(UIAlertAction *action) {
+//                    
+//                }];
+//            }else{
 //                [SVProgressHUD showErrorWithStatus:dict[@"msg"]];
 //            }
-            
-            
-            if ([@"4001" isEqualToString:reqFlag]) {
-                [SKCustomFunction alertSheetWithTitle:nil message:@"身份验证失效，请重新登录" confTitle:nil confirmHandler:^(UIAlertAction *action) {
-                    [SKUserListModal removeTokenValue:[SKTokenStatic getToken]];
-                    [SKTokenStatic saveToken:nil];
-                    [SKCustomFunction jumpToLogin];
-                } cancleHandler:^(UIAlertAction *action) {
-                    
-                }];
-            }else{
-                [SVProgressHUD showErrorWithStatus:dict[@"msg"]];
-            }
-            successBlock(dict, reqFlag);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (errorBlock && error) {
-            errorBlock(error);
-        }
-        [SVProgressHUD dismiss];
-        [SVProgressHUD setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
-        [SVProgressHUD setImageViewSize:CGSizeMake(28, 28)];
-    }];
+//            successBlock(dict, reqFlag);
+//        }
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        if (errorBlock && error) {
+//            errorBlock(error);
+//        }
+//        [SVProgressHUD dismiss];
+//        [SVProgressHUD setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]];
+//        [SVProgressHUD setImageViewSize:CGSizeMake(28, 28)];
+//    }];
 }
 
 //通过图片Data数据第一个字节 来获取图片扩展名
@@ -323,20 +323,20 @@ static AFHTTPSessionManager *_manager = nil;
     return nil;
 }
 
-+ (NSString *)mimeTypeForFileAtPath:(NSString *)path
-{
-    if (![[[NSFileManager alloc] init] fileExistsAtPath:path]) {
-        return nil;
-    }
-    
-    CFStringRef UTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)[path pathExtension], NULL);
-    CFStringRef MIMEType = UTTypeCopyPreferredTagWithClass (UTI, kUTTagClassMIMEType);
-    CFRelease(UTI);
-    if (!MIMEType) {
-        return @"application/octet-stream";
-    }
-    return (__bridge NSString *)(MIMEType);
-}
+//+ (NSString *)mimeTypeForFileAtPath:(NSString *)path
+//{
+//    if (![[[NSFileManager alloc] init] fileExistsAtPath:path]) {
+//        return nil;
+//    }
+//
+//    CFStringRef UTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)[path pathExtension], NULL);
+//    CFStringRef MIMEType = UTTypeCopyPreferredTagWithClass (UTI, kUTTagClassMIMEType);
+//    CFRelease(UTI);
+//    if (!MIMEType) {
+//        return @"application/octet-stream";
+//    }
+//    return (__bridge NSString *)(MIMEType);
+//}
 
 + (BOOL)isMobileNumber:(NSString *)mobileNum
 {
